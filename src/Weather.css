@@ -1,0 +1,113 @@
+body {
+  color: #24527a;
+  background: white;
+}
+form {
+  padding: 20px;
+}
+.overview {
+  padding-left: 30px;
+}
+.weatherApp-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weatherApp {
+  padding: 17px;
+  border: 1px solid #bdc2fa;
+  width: 44rem;
+  box-shadow: 15px 15px 15px darkgray;
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  border-radius: 30px;
+}
+#city-input {
+  border-radius: 30px;
+  border: 2px solid #24527a;
+}
+#search {
+  border-radius: 30px;
+  border: 2px solid #24527a;
+}
+#cityButton {
+  border-radius: 30px;
+  border: 2px solid #24527a;
+}
+h1 {
+  text-align: left;
+  font-size: 35px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.dhw {
+  padding-left: 20px;
+}
+li {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.bigemoji {
+  font-size: 55px;
+}
+.temperature {
+  font-size: 36px;
+  text-align: center;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+#°c,
+#°f {
+  font-size: 25px;
+}
+
+.card {
+  display: block;
+  margin: 8px;
+  top: 0;
+  width: fit-content;
+}
+.col-2 {
+  width: 112px;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.emoji {
+  font-size: 45px;
+  text-align: center;
+}
+
+.card-body {
+  width: 90px;
+  height: 120px;
+  text-align: center;
+  line-height: 35px;
+
+  box-shadow: 5px 5px 5px darkgray;
+}
+
+h5 {
+  text-align: center;
+}
+.card:hover {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(248, 219, 219) 0%,
+    rgb(229, 248, 250) 90%
+  );
+
+  transition: all 200ms;
+}
+.github {
+  display: block;
+  box-sizing: border-box;
+}
