@@ -4,7 +4,7 @@ import "./Weather.css";
 export default function Main() {
   return (
     <div className="main">
-      <div class="forecast" id="forecast">
+      <div className="forecast" id="forecast">
         <div className="row">
           <div className="col-2">
             <div className="card-group">

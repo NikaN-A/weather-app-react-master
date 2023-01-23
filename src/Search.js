@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 export default function Search(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
+
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
@@ -14,7 +16,7 @@ export default function Search(props) {
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
-      date: "Tuesday 15:51",
+      date: new Date(response.data.dt * 1000),
     });
   }
   if (weatherData.ready) {
@@ -25,7 +27,7 @@ export default function Search(props) {
             type="text"
             id="city-input"
             placeholder="    🔍Enter your city"
-            autofocus="on"
+            autoFocus="on"
           />
           <input type="submit" value="Search" id="search" />
           <input type="button" value="Current City" id="cityButton" />
@@ -34,7 +36,10 @@ export default function Search(props) {
           <h1 id="city">{weatherData.city}</h1>
           <ul>
             <li>
-              Last update: <span id="date">{weatherData.date}</span>
+              Last update:{" "}
+              <span id="date">
+                <FormattedDate date={weatherData.date} />
+              </span>
             </li>
           </ul>
         </div>
