@@ -20,18 +20,31 @@ form {
   background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   border-radius: 30px;
 }
-#city-input {
+.city-input {
+  border-radius: 30px;
+  border: 2px solid #24527a;
+  margin-right: 5px;
+}
+.search {
+  border-radius: 30px;
+  border: 2px solid #24527a;
+  margin-right: 5px;
+}
+.cityButton {
   border-radius: 30px;
   border: 2px solid #24527a;
 }
-#search {
-  border-radius: 30px;
-  border: 2px solid #24527a;
+.bigemoji {
+  padding-left: 22px;
 }
-#cityButton {
-  border-radius: 30px;
-  border: 2px solid #24527a;
+.date {
+  padding-left: 0;
 }
+.noom {
+  padding-left: 22px;
+  font-size: 20px;
+}
+
 h1 {
   text-align: left;
   font-size: 35px;

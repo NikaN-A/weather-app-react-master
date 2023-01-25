@@ -40,14 +40,14 @@ export default function Search(props) {
       <div className="searchpart">
         <form id="searchform" onSubmit={handleSubmit}>
           <input
+            className=" city-input"
             type="text"
-            id="city-input"
             placeholder="    🔍Enter your city"
             autoFocus="on"
             onChange={handleCityChange}
           />
-          <input type="submit" value="Search" id="search" />
-          <input type="button" value="Current City" id="cityButton" />
+          <input type="submit" value="Search" className="search" />
+          <input type="button" value="Current City" className="cityButton" />
         </form>
         <WeatherInfo data={weatherData} />
       </div>

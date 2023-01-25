@@ -8,21 +8,20 @@ export default function WeatherInfo(props) {
     <div className="WeatherInfo">
       <div className="overview">
         <h1 id="city">{props.data.city}</h1>
-        <ul>
+        <ul className="date">
           <li>
-            Last update:{" "}
-            <span id="date">
-              <FormattedDate date={props.data.date} />
-            </span>
+            Last update: <FormattedDate date={props.data.date} />{" "}
           </li>
         </ul>
       </div>
       <div className="row">
-        <div className="col-6">
-          <div className="bigemoji" id="icon" alt="">
+        <div className="col-6 d-flex">
+          <div className="bigemoji" alt="">
             <WeatherIcon code={props.data.icon} />
           </div>
-          <WeatherCels celsius={props.data.temperature} />
+          <span className="noom">
+            <WeatherCels celsius={props.data.temperature} />
+          </span>
         </div>
         <div className="col-6">
           <div className="dhw">
