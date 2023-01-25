@@ -5,7 +5,7 @@ export default function Footer() {
     <div className="github">
       <small>
         <a
-          href="https://github.com/NikaN-A/WeatherApp"
+          href="https://github.com/NikaN-A/weather-app-react-master"
           target="_blank"
           rel="noreferrer"
         >
