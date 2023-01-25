@@ -1,7 +1,6 @@
 import "./Weather.css";
 import Search from "./Search";
 import Footer from "./Footer";
-import Main from "./Main";
 
 function App() {
   return (
@@ -10,7 +9,6 @@ function App() {
         <div className="weatherApp-wrapper">
           <div className="weatherApp">
             <Search defaultCity="Kyiv" />
-            <Main />
           </div>
           <Footer />
         </div>
