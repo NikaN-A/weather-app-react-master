@@ -7,6 +7,7 @@ import Main from "./Main";
 export default function Search(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -26,7 +27,6 @@ export default function Search(props) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
-
   function handleSubmit(event) {
     event.preventDefault();
     search(city);
@@ -48,7 +48,6 @@ export default function Search(props) {
             onChange={handleCityChange}
           />
           <input type="submit" value="Search" className="search" />
-          <input type="button" value="Current City" className="cityButton" />
         </form>
         <WeatherInfo data={weatherData} />
         <Main coordinates={weatherData.coordinates} />
